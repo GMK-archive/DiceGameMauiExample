@@ -10,7 +10,7 @@
 
             BackgroundColor="#A52B2A"
             TextColor="White" HeightRequest="30" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
-        <Button x:Name="PlayGame" Text="RZUĆ KOŚĆMI" TextColor="White" BackgroundColor="#D2691B" HorizontalOptions="Center"/>
+        <Button x:Name="PlayGame" Text="RZUĆ KOŚĆMI" TextColor="White" BackgroundColor="#D2691B" HorizontalOptions="Center" Clicked="ThrowDice"/>
         <Grid BackgroundColor="White" VerticalOptions="Center" Padding="30">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -30,6 +30,6 @@
         </Grid>
         <Label x:Name="CurentSum" Text="Wynik tego losowania: " HorizontalOptions="Center"/>
         <Label x:Name="TotalSum" Text="Wynik gry: " HorizontalOptions="Center"/>
-        <Button x:Name="ResetButton" Text="RESETUJ WYNIK" HorizontalOptions="Center" TextColor="White" BackgroundColor="#D46819" />
+        <Button x:Name="ResetButton" Text="RESETUJ WYNIK" HorizontalOptions="Center" TextColor="White" BackgroundColor="#D46819" Clicked="ResetGame" />
     </VerticalStackLayout>
 </ContentPage>
