@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Home"
+             Title="Home" BackgroundColor="#F5F5DD">
+    <VerticalStackLayout Margin="10">
+        <Label 
+            Text="Gra w kości. Autor 04121987"
+            VerticalOptions="Center" 
+
+            BackgroundColor="#A52B2A"
+            TextColor="White" HeightRequest="30" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+        <Button x:Name="PlayGame" Text="RZUĆ KOŚĆMI" TextColor="White" BackgroundColor="#D2691B" HorizontalOptions="Center"/>
+        <Grid BackgroundColor="White" VerticalOptions="Center" Padding="30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions >
+            <Image Source="question.jpg" Grid.Row="0" Grid.Column="0" x:Name="Die1" HeightRequest="100"/>
+            <Image Source="question.jpg" Grid.Row="0" Grid.Column="1" x:Name="Die2" HeightRequest="100"/>
+            <Image Source="question.jpg" Grid.Row="0" Grid.Column="2" x:Name="Die3" HeightRequest="100"/>
+            <Image Source="question.jpg" Grid.Row="0" Grid.Column="3" x:Name="Die4" HeightRequest="100"/>
+            <Image Source="question.jpg" Grid.Row="0" Grid.Column="4" x:Name="Die5" HeightRequest="100"/>
+        </Grid>
+        <Label x:Name="CurentSum" Text="Wynik tego losowania: " HorizontalOptions="Center"/>
+        <Label x:Name="TotalSum" Text="Wynik gry: " HorizontalOptions="Center"/>
+        <Button x:Name="ResetButton" Text="RESETUJ WYNIK" HorizontalOptions="Center" TextColor="White" BackgroundColor="#D46819" />
+    </VerticalStackLayout>
+</ContentPage>
